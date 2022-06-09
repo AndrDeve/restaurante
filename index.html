@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+
+    <!-- font awesome cdn link ICONOS DE HAMBURGUESA Y LA X  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--inicio header-->
+    <header class="header">
+
+        <div class="header-top">
+            <p>Contáctanos: +57 555 555 55 55</p>
+        </div>
+
+        <div class="header-center">
+           <div class="header-center-items">
+               <h1>tomato</h1>
+
+               <div id="menu-btn" class="fas fa-bars"></div>
+
+               <div class="logos-redes-sociales">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-instagram' ></i>
+               </div>
+
+            <nav class="navbar">
+                <a href="#">Inicio</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Galería</a>
+                <a href="#">Menú</a>
+                <a href="#">Reserva/Domicilio</a>
+                <a href="#">Contactos</a>
+            </nav>
+           </div>
+        </div>
+    </header>
+    <!--final header-->
+
+    <!--inicio slider-->
+    <section class="home" id="home">
+
+        <div class="swiper home-slider"> <!--este swiper es de la página y la enlazamos con el script del final-->
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide slide" style="background: url(img/1.png) no-repeat;">
+                    <div class="content">
+                        <figure>
+                            <img src="img/logo.png" alt="">
+                        </figure>
+                        <span>Cocina francesa</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Nam, earum.Sed assumenda commod.</p>
+                        <a href="#">Pedir domicilio</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(img/2.png) no-repeat;">
+                    <div class="content">
+                        <figure>
+                            <img src="img/logo.png" alt="">
+                        </figure>
+                        <span>Cocina francesa</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Nam, earum.Sed assumenda commod.</p>
+                        <a href="#">Pedir domicilio</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide slide" style="background: url(img/3.png) no-repeat;">
+                    <div class="content">
+                        <figure>
+                            <img src="img/logo.png" alt="">
+                        </figure>
+                        <span>Cocina francesa</span>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Nam, earum.Sed assumenda commod.</p>
+                        <a href="#">Pedir domicilio</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+    <!--final slider-->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

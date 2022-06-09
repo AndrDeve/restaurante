@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    transition: all .2s linear;
+}
+
+// variables colores
+$negro:rgb(0, 0, 0);
+$rosa-claro:rgba(0, 0, 0, 0.334);
+$blanco:#ffffff;
+$gris:#414141;
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+  
+    &::-webkit-scrollbar{ // grosor"
+      width: 1rem;
+    }
+  
+    &::-webkit-scrollbar-track{ // color de fondo del scroll
+      background: white;
+    }
+  
+    &::-webkit-scrollbar-thumb{ // color barra scroll
+      background: $negro;
+    }
+  }
+  
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+//header superior
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    // background: rgb(21, 21, 21);
+    z-index: 4000;
+
+    .header-top{
+        align-items: center;
+        background:$negro;
+
+        p{
+            color: $blanco;
+            font-size: 1.5rem;
+            padding: .8rem 0;
+            text-align: center;
+            font-weight: 500;
+        }
+    }
+
+    .header-center{
+        background: $rosa-claro;
+
+        .header-center-items{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:.7rem 6%;
+            z-index: 100;
+
+            h1{
+                color: $blanco;
+                font-size: 3rem;
+                font-family: 'Pacifico', cursive;
+                font-weight: 300;
+            }
+
+            .logos-redes-sociales{
+              display: none;
+              cursor: pointer;
+            }
+
+            .navbar{
+                
+                a{
+                    display: inline-block;
+                    color: $blanco;
+                    font-size: 1.9rem;
+                    font-weight: 500;
+                    margin-right:2rem ;
+                    height: 100%;
+
+                    &:hover{
+                       transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#menu-btn{
+    font-size: 3rem;
+    cursor: pointer;
+    display: none;
+}
+
+// boton
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    padding-right: 3rem;
+    background: linear-gradient(130deg, $negro 93%, transparent 90%);
+    color: $blanco;
+    cursor: pointer;
+    font-size: 1.7rem;
+  
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+
+//slider
+.home{
+    padding: 0;
+    
+    .slide{
+        min-height: 100vh;
+        background-size: cover !important; //se centra "casi" imagen
+        background-position: 0 75% !important; // busca el centro de la imagen "abdomen"
+        padding: 0 6%;  // se mueve texto
+        display: flex;       // centra el texto en pantalla "abdomen" 
+        align-items: center; // centra el texto en pantalla "abdomen"
+
+        .content{
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            margin: 0 auto;
+
+            span{
+                font-size: 4rem;
+                color: $blanco;
+                display: block;
+                font-family: 'Pacifico', cursive;
+                font-weight: 300;
+            }
+
+            p{
+                font-size: 2rem;
+                color: $blanco;
+                padding: 1rem 0;
+                margin-bottom: 2rem;
+            }
+
+            img{
+              height: 25rem;
+              width: 27rem;
+            }
+
+            a{
+              color: white;
+              font-size: 2rem;
+              background: rgba(0, 0, 0, 0.553);
+              padding: 1.5rem 2.5rem;
+              border-radius: 2rem 0 2rem 0;
+
+              &:hover{
+                background: $negro;
+                transform: scale3d(2deg);
+              }
+            }
+        }
+    }
+}  
+
+.swiper-pagination-bullet{
+    height: 2rem;
+    width: 2rem;
+    background: $blanco;
+    border-radius: 50%;
+  
+    &.swiper-pagination-bullet-active{
+      background: $negro;
+    }
+}
+
+
+
+
+
+// media queries
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+        scroll-padding: 7rem;
+    }
+
+}
+
+@media (max-width:900px){
+    .header .header-center .header-center-items{
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            margin-bottom: 1rem;
+        }
+
+        .navbar{
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+        color: white;
+        /*rotar la X */
+        &.fa-times{
+          transform: rotate(180deg);
+        }
+      }
+      
+
+      .header{
+
+        .header-center{
+          padding: 1.2rem 0;
+    
+          .header-center-items{
+            flex-direction: row;
+            padding: 0rem 6%;
+
+            .logos-redes-sociales{
+              display: inline-block;
+              
+              .bx{
+                color: white;
+                font-size: 3rem;
+                margin-right: 0.5rem;
+              }
+            }
+
+            h1{
+                margin: 0;
+            }
+    
+            .navbar{
+              position: absolute;
+              top:100%; left:0; right:0;
+              background: black;
+              /* desaparece menu responsivo */
+              clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        
+              /* aparece menu responsivo */
+              &.active{
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+              }
+    
+              .before::before{
+                display: none;
+              }
+        
+              a{
+                display: block;
+                font-size: 2rem;
+                color: white;
+                padding: 2.5rem 6%;
+    
+                &:hover{
+                  color: $negro
+                }
+              }
+            }
+          }
+        }
+      }
+}
+
+@media (max-width:450px){
+
+    html{
+      font-size: 50%;
+
+      .section{
+
+        .container-iconos{
+
+          .iconos-item{
+              margin-bottom: 1.5rem;
+    
+            img{
+              height: 5rem;
+              width: 5rem;
+            }
+
+            .img-modificar{
+                height: 5rem;
+                width: 5rem;
+            }
+
+            span{
+              font-size: 2rem;
+            }
+
+            p{
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
