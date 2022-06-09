@@ -73,7 +73,7 @@ body{
 
             h1{
                 color: $blanco;
-                font-size: 2.5rem;
+                font-size: 3rem;
                 font-family: 'Pacifico', cursive;
                 font-weight: 400;
             }
@@ -239,6 +239,10 @@ body{
           .header-center-items{
             flex-direction: row;
             padding: 0rem 6%;
+
+            h1{
+              font-size: 2.5rem;
+            }
 
             .logos-redes-sociales{
               display: inline-block;
