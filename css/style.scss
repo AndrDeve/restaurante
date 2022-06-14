@@ -90,7 +90,7 @@ body{
                     color: $blanco;
                     font-size: 1.9rem;
                     font-weight: 500;
-                    margin-right:2rem ;
+                    margin-left:2rem ;
                     height: 100%;
 
                     &:hover{
@@ -190,6 +190,132 @@ body{
     }
 }
 
+// sobre nosotros
+.sobre-nosotros{
+  padding: 0 6%;
+  margin-top: 5rem;
+
+  .sobre-nosotros-titulos{
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h3{
+      font-size: 4.5rem;
+      font-family: 'Pacifico', cursive;
+      color: $gris;
+    }
+
+    p{
+      font-size: 2.4rem;
+      color: $gris;
+      margin-bottom: 2rem;
+    }
+
+    hr{
+      text-align: center;
+      border: 1px solid rgb(255, 166, 0);
+      width: 15%;
+      margin: 0 auto;
+    }
+  }
+
+  .contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-between;
+
+    p{
+      margin-left: 3rem;
+      font-size: 2rem;
+      line-height: 3.5rem;
+      letter-spacing: .2rem;
+      color: $gris;
+    }
+
+    .firma{
+      margin-top: 1rem;
+      font-family: 'Pacifico', cursive;
+    }
+  }
+}
+
+.sobre-nosotros .container__grid{
+  display: grid;
+  height: 40rem;
+  grid-template-areas: 
+  "img1 img1"
+  "img1 img1"
+  "img2 img3";
+  gap: 10px;
+  width: 90%;
+  object-fit: cover;
+  margin-bottom: 50px;
+
+  .container-item{
+    position: relative;
+    width: 100%;         /*tamaño de las imagenes*/
+    height: 25rem;
+    overflow: hidden;
+
+    .projects__img{
+      width: 100%;
+      height: 100%;              /* igual tamaño de las imagenes */
+      object-fit:cover;
+      border-radius: 3px;
+   }
+
+   .modificar{
+    height: 20rem;
+    width: 35rem;
+   }
+  }
+}
+
+//ligtbox
+.imagen-light{
+  position:fixed;
+  background: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;  /* centrar imagen*/
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(100%);
+  transition: transform .2s ease-in-out;
+  z-index: 10000;
+}
+
+.show{
+  transform: translate(0);
+}
+
+ .agregar-imagen{
+  object-fit: cover;
+  width: 100rem;
+  border-radius: 1rem; /*imagen*/
+  transform: scale(0);
+  transition: transform .3s .2s;
+  height: 55rem;
+}
+//ligtbox final
+
+.showImage{
+  transform: scale(.8); /* lo que va a ampliar tamaño*/
+}
+
+
+.container-item:nth-of-type(1){
+  grid-area: img1;                   /*ubicar la imagen 1 mas grande a la izquierda */
+}
+
+.container-item:nth-of-type(2){
+grid-area: img2;
+}
+
+.container-item:nth-of-type(3){
+grid-area: img3;
+}
 
 
 
@@ -202,6 +328,30 @@ body{
         scroll-padding: 7rem;
     }
 
+    .sobre-nosotros .sobre-nosotros-texto p{
+      font-size: 1.8rem;
+      line-height: 3rem;
+      letter-spacing: .1rem;
+    }
+
+}
+
+@media (max-width:950px){
+  .sobre-nosotros .contenedor-sobre-nosotros{
+    flex-direction: column;
+  }
+
+  .sobre-nosotros .contenedor-sobre-nosotros p{
+    margin: 3rem 0 0 0;
+  }
+
+  .sobre-nosotros .container__grid{
+    width: 100%;
+  }
+
+  .sobre-nosotros .container__grid .container-item .modificar{
+    width: 100%;
+  }
 }
 
 @media (max-width:900px){
@@ -321,6 +471,13 @@ body{
             }
           }
         }
+      }
+    }
+
+    .sobre-nosotros .sobre-nosotros-titulos{
+
+      p{
+        font-size: 2.2rem;
       }
     }
   }
