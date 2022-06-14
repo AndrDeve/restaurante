@@ -242,6 +242,7 @@ body {
   line-height: 3.5rem;
   letter-spacing: .2rem;
   color: #414141;
+  text-align: center;
 }
 
 .sobre-nosotros .contenedor-sobre-nosotros .firma {
@@ -276,6 +277,8 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 3px;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .sobre-nosotros .container__grid .container-item .modificar {
