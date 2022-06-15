@@ -355,8 +355,9 @@ grid-area: img3;
   }
 }
 
+// galeria
 .galeria{
-  padding: 0 6%;
+  padding: 0 4%;
   margin-top: 5rem;
 
   .textos-galeria{
@@ -380,6 +381,28 @@ grid-area: img3;
       border: 1px solid rgb(255, 166, 0);
       width: 15%;
       margin: 0 auto;
+    }
+  }
+}
+
+//galeria imágenes
+.galeria .contenedor-galeria{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .galeria-items{
+    text-align: center;
+    margin: 0 auto;
+
+    img{
+      flex-wrap: wrap;
+      height: 35rem;
+      width: 40rem;
+      margin-bottom: 4rem;
+      object-fit: cover;
+      cursor: pointer;
+      border-radius: 3px;
     }
   }
 }
@@ -585,5 +608,9 @@ grid-area: img3;
       p{
         font-size: 2.2rem;
       }
+    }
+
+    .galeria .textos-galeria p{
+      font-size: 2.2rem;
     }
   }
