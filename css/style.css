@@ -364,7 +364,7 @@ body {
   background: url(../img/fondo.jpg);
   background-attachment: fixed;
   /*imagen fija*/
-  background-position: center;
+  background-position: 10%;
   background-size: cover;
   /*toda la imagen*/
   position: relative;
