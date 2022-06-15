@@ -264,12 +264,12 @@ body {
 .swiper-pagination-bullet {
   height: 2rem;
   width: 2rem;
-  background: #ffffff;
+  background: black;
   border-radius: 50%;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: black;
+  background: #ffffff;
 }
 
 .sobre-nosotros {

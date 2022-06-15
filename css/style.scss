@@ -238,11 +238,11 @@ body{
 .swiper-pagination-bullet{
     height: 2rem;
     width: 2rem;
-    background: $blanco;
+    background: $negro;
     border-radius: 50%;
   
     &.swiper-pagination-bullet-active{
-      background: $negro;
+      background: $blanco;
     }
 }
 
