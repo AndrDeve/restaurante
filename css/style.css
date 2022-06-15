@@ -32,6 +32,80 @@ html::-webkit-scrollbar-thumb {
   background: black;
 }
 
+.pulse {
+  width: 5rem;
+  height: 5rem;
+  background: #51c254;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 5rem;
+  font-size: 2rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1.3rem;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.pulse i {
+  color: white;
+}
+
+.pulse:after,
+.pulse:before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: -1rem;
+  right: -1rem;
+  bottom: -1rem;
+  border: 1px solid green;
+  border-radius: 50%;
+  -webkit-animation: pulse 1.5s linear infinite;
+          animation: pulse 1.5s linear infinite;
+}
+
+.pulse::after {
+  -webkit-animation-delay: .4s;
+          animation-delay: .4s;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
