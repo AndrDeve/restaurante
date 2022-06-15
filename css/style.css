@@ -242,7 +242,6 @@ body {
   line-height: 3.5rem;
   letter-spacing: .2rem;
   color: #414141;
-  text-align: center;
 }
 
 .sobre-nosotros .contenedor-sobre-nosotros .firma {
@@ -320,7 +319,6 @@ body {
 .agregar-imagen {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100rem;
   border-radius: 1rem;
   /*imagen*/
   -webkit-transform: scale(0);
@@ -330,6 +328,7 @@ body {
   transition: transform .3s .2s;
   transition: transform .3s .2s, -webkit-transform .3s .2s;
   height: 55rem;
+  width: 100rem;
 }
 
 .showImage {
@@ -380,6 +379,7 @@ body {
   }
   .sobre-nosotros .contenedor-sobre-nosotros p {
     margin: 3rem 0 0 0;
+    text-align: center;
   }
   .sobre-nosotros .container__grid {
     width: 100%;
@@ -467,6 +467,20 @@ body {
   }
   .header .header-center .header-center-items .navbar a:hover {
     color: black;
+  }
+}
+
+@media (max-width: 700px) {
+  .agregar-imagen {
+    height: 40rem;
+    width: 70rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .agregar-imagen {
+    height: 40rem;
+    width: 50rem;
   }
 }
 
