@@ -447,7 +447,7 @@ grid-area: img3;
 
 // galeria
 .galeria{
-  padding: 0 4%;
+  padding: 0 6%;
   margin-top: 5rem;
 
   .textos-galeria{
@@ -483,18 +483,23 @@ grid-area: img3;
 
   .galeria-items{
     text-align: center;
-    margin: 0 auto;
+    // margin: 0 auto;
 
     img{
       flex-wrap: wrap;
-      height: 35rem;
-      width: 40rem;
+      height: 33rem;
+      width: 35rem;
       margin-bottom: 4rem;
       object-fit: cover;
       cursor: pointer;
       border-radius: 3px;
     }
   }
+}
+
+//menu
+.menu{
+  padding: 0 6%;
 }
 
 
@@ -634,6 +639,10 @@ grid-area: img3;
   .agregar-imagen2{
     height: 45rem;
     width: 70rem;
+  }
+
+  .galeria .contenedor-galeria .galeria-items{
+    margin: 0 auto;
   }
 }
 

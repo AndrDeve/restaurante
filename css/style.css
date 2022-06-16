@@ -522,7 +522,7 @@ body {
 }
 
 .galeria {
-  padding: 0 4%;
+  padding: 0 6%;
   margin-top: 5rem;
 }
 
@@ -563,19 +563,22 @@ body {
 
 .galeria .contenedor-galeria .galeria-items {
   text-align: center;
-  margin: 0 auto;
 }
 
 .galeria .contenedor-galeria .galeria-items img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 35rem;
-  width: 40rem;
+  height: 33rem;
+  width: 35rem;
   margin-bottom: 4rem;
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
   border-radius: 3px;
+}
+
+.menu {
+  padding: 0 6%;
 }
 
 @media (max-width: 1200px) {
@@ -705,6 +708,9 @@ body {
   .agregar-imagen2 {
     height: 45rem;
     width: 70rem;
+  }
+  .galeria .contenedor-galeria .galeria-items {
+    margin: 0 auto;
   }
 }
 
