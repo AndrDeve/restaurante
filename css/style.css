@@ -712,6 +712,9 @@ body {
   .galeria .contenedor-galeria .galeria-items {
     margin: 0 auto;
   }
+  .galeria .contenedor-galeria .galeria-items img {
+    width: 40rem;
+  }
 }
 
 @media (max-width: 610px) {
