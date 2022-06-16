@@ -636,6 +636,7 @@ body {
   margin-bottom: 1.3rem;
   font-style: italic;
   color: #797979;
+  letter-spacing: 1.5px;
 }
 
 .menu .contenedor-menu p .precio {
@@ -812,6 +813,12 @@ body {
   .agregar-imagen2 {
     height: 50rem;
     width: 53rem;
+  }
+  .menu .contenedor-menu .menu-items .menu-item p {
+    font-size: 3rem;
+  }
+  .menu .contenedor-menu .menu-items p {
+    font-size: 2.1rem;
   }
 }
 
