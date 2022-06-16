@@ -183,22 +183,6 @@ body {
   display: none;
 }
 
-.btn {
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 1rem 2.8rem;
-  padding-right: 3rem;
-  background: linear-gradient(130deg, black 93%, transparent 90%);
-  color: #ffffff;
-  cursor: pointer;
-  font-size: 1.7rem;
-}
-
-.btn:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .home {
   padding: 0;
 }
@@ -257,8 +241,6 @@ body {
 
 .home .slide .content a:hover {
   background: black;
-  -webkit-transform: scale3d(2deg);
-          transform: scale3d(2deg);
 }
 
 .swiper-pagination-bullet {
@@ -579,6 +561,103 @@ body {
 
 .menu {
   padding: 0 6%;
+  margin-top: 1rem;
+}
+
+.menu .textos-menu {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.menu .textos-menu h3 {
+  font-size: 4.5rem;
+  font-family: 'Pacifico', cursive;
+  color: #414141;
+}
+
+.menu .textos-menu p {
+  font-size: 2.4rem;
+  color: #414141;
+  margin-bottom: 2rem;
+}
+
+.menu .textos-menu hr {
+  text-align: center;
+  border: 1px solid #ffa600;
+  width: 15%;
+  margin: 0 auto;
+}
+
+.menu .contenedor-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu .contenedor-menu .menu-items {
+  margin-bottom: 3rem;
+}
+
+.menu .contenedor-menu .menu-items hr {
+  border: 1px solid #b8b8b8;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.menu .contenedor-menu .menu-items .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.menu .contenedor-menu .menu-items .menu-item img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.menu .contenedor-menu .menu-items .menu-item p {
+  font-size: 2.7rem;
+  font-family: 'Pacifico', cursive;
+  color: #414141;
+  margin-left: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .contenedor-menu p {
+  font-size: 1.8rem;
+  margin-bottom: 1.3rem;
+  font-style: italic;
+  color: #797979;
+}
+
+.menu .contenedor-menu p .precio {
+  color: #e02f2f;
+  font-weight: 400;
+}
+
+.menu .menu-pdf {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.menu .menu-pdf a {
+  color: white;
+  font-size: 2rem;
+  background: #414141;
+  padding: 1.5rem 2.5rem;
+  border-radius: 2rem 0 2rem 0;
+}
+
+.menu .menu-pdf a:hover {
+  background: black;
 }
 
 @media (max-width: 1200px) {
@@ -712,7 +791,7 @@ body {
     margin: 0 auto;
   }
   .galeria .contenedor-galeria .galeria-items img {
-    width: 40rem;
+    width: 39rem;
   }
 }
 
@@ -767,6 +846,9 @@ body {
     font-size: 2.2rem;
   }
   .galeria .textos-galeria p {
+    font-size: 2.2rem;
+  }
+  .menu .textos-menu p {
     font-size: 2.2rem;
   }
 }

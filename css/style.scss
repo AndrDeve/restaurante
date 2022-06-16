@@ -165,21 +165,6 @@ body{
     display: none;
 }
 
-// boton
-.btn{
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 1rem 2.8rem;
-    padding-right: 3rem;
-    background: linear-gradient(130deg, $negro 93%, transparent 90%);
-    color: $blanco;
-    cursor: pointer;
-    font-size: 1.7rem;
-  
-    &:hover{
-      transform: scale(1.1);
-    }
-  }
 
 //slider
 .home{
@@ -228,7 +213,6 @@ body{
 
               &:hover{
                 background: $negro;
-                transform: scale3d(2deg);
               }
             }
         }
@@ -500,6 +484,94 @@ grid-area: img3;
 //menu
 .menu{
   padding: 0 6%;
+  margin-top: 1rem;
+
+  .textos-menu{
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h3{
+      font-size: 4.5rem;
+      font-family: 'Pacifico', cursive;
+      color: $gris;
+    }
+
+    p{
+      font-size: 2.4rem;
+      color: $gris;
+      margin-bottom: 2rem;
+    }
+
+    hr{
+      text-align: center;
+      border: 1px solid rgb(255, 166, 0);
+      width: 15%;
+      margin: 0 auto;
+    }
+  }
+
+  .contenedor-menu{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .menu-items{
+      margin-bottom: 3rem;
+
+      hr{
+        border: 1px solid rgb(184, 184, 184);
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      .menu-item{
+        display: flex;
+        margin-bottom: 1.5rem;
+
+        img{
+          height: 5rem;
+          width: 5rem;
+        }
+
+        p{
+          font-size: 2.7rem;
+          font-family: 'Pacifico', cursive;
+          color: $gris;
+          margin-left: 1rem;
+          align-items: center;
+        }
+      }
+    }
+
+    p{
+      font-size: 1.8rem;
+      margin-bottom: 1.3rem;
+      font-style: italic;
+      color: #797979;
+
+      .precio{
+        color: rgb(224, 47, 47);
+        font-weight: 400;
+      }
+    }
+  }
+
+  .menu-pdf{
+    text-align: center;
+    margin-top: 2rem;
+
+    a{
+      color: white;
+      font-size: 2rem;
+      background: $gris;
+      padding: 1.5rem 2.5rem;
+      border-radius: 2rem 0 2rem 0;
+
+      &:hover{
+        background: $negro;
+      }
+    }
+  }
 }
 
 
@@ -590,7 +662,6 @@ grid-area: img3;
               .bx{
                 color: white;
                 font-size: 3rem;
-                
               }
             }
 
@@ -645,7 +716,7 @@ grid-area: img3;
     margin: 0 auto;
 
     img{
-      width: 40rem;
+      width: 39rem;
     }
   }
 }
@@ -724,6 +795,10 @@ grid-area: img3;
     }
 
     .galeria .textos-galeria p{
+      font-size: 2.2rem;
+    }
+
+    .menu .textos-menu p{
       font-size: 2.2rem;
     }
   }
