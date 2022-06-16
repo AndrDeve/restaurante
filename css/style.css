@@ -410,6 +410,58 @@ body {
   /* lo que va a ampliar tamaño*/
 }
 
+.imagen-light2 {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  /* centrar imagen*/
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  z-index: 10000;
+}
+
+.show2 {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+.agregar-imagen2 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+  /*imagen*/
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform .3s .2s;
+  transition: -webkit-transform .3s .2s;
+  transition: transform .3s .2s;
+  transition: transform .3s .2s, -webkit-transform .3s .2s;
+  height: 70rem;
+  width: 100rem;
+}
+
+.showImage2 {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  /* lo que va a ampliar tamaño*/
+}
+
 .container-item:nth-of-type(1) {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -432,7 +484,7 @@ body {
 }
 
 .ima-grande {
-  margin: 14rem 0 0 0;
+  margin: 10rem 0 0 0;
   width: 100%;
   height: 40rem;
   background: url(../img/fondo.png);
@@ -650,6 +702,10 @@ body {
     height: 40rem;
     width: 70rem;
   }
+  .agregar-imagen2 {
+    height: 45rem;
+    width: 70rem;
+  }
 }
 
 @media (max-width: 610px) {
@@ -665,6 +721,10 @@ body {
   .agregar-imagen {
     height: 40rem;
     width: 50rem;
+  }
+  .agregar-imagen2 {
+    height: 50rem;
+    width: 53rem;
   }
 }
 
