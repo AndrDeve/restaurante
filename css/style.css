@@ -544,6 +544,48 @@ body {
   width: 15%;
   margin: 0 auto;
 }
+.contactos .contenedor-contactos {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contactos .contenedor-contactos h3 {
+  font-size: 3rem;
+  font-family: "Pacifico", cursive;
+  color: #414141;
+  margin-bottom: 0.5rem;
+}
+.contactos .contenedor-contactos span {
+  font-size: 1.8rem;
+  color: #414141;
+}
+.contactos .contenedor-contactos span i {
+  color: rgb(255, 166, 0);
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.contactos .contactos-datos .direccion {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.contactos .contactos-datos .horarios {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.contactos .contactos-datos .horarios span {
+  margin-bottom: 1rem;
+}
+.contactos .redes-sociales i {
+  font-size: 3rem;
+  padding: 1rem;
+  background: rgb(31, 31, 31);
+  color: #ffffff;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
 
 @media (max-width: 1200px) {
   .ima-grande {
@@ -579,6 +621,12 @@ body {
 
   .sobre-nosotros .container__grid .container-item .modificar {
     width: 100%;
+  }
+
+  .contactos .contenedor-contactos .mapa iframe {
+    height: 350px;
+    width: 400px;
+    margin-top: 3rem;
   }
 }
 @media (max-width: 900px) {
@@ -695,6 +743,11 @@ body {
 
   .menu .contenedor-menu .menu-items p {
     font-size: 2.1rem;
+  }
+
+  .contactos .contenedor-contactos .mapa iframe {
+    height: 250px;
+    width: 100%;
   }
 }
 @media (max-width: 450px) {

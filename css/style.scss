@@ -603,6 +603,62 @@ grid-area: img3;
       margin: 0 auto;
     }
   }
+
+  .contenedor-contactos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    h3{
+      font-size: 3rem;
+      font-family: 'Pacifico', cursive;
+      color: $gris;
+      margin-bottom: .5rem;
+    }
+
+    span{
+      font-size: 1.8rem;
+      color: $gris;
+
+      i{
+        color:  rgb(255, 166, 0);
+        margin-right: .5rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .contactos-datos{
+
+    .direccion{
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .horarios{
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+
+      span{
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .redes-sociales{
+    
+    i{
+      font-size: 3rem;
+      padding: 1rem;
+      background: rgb(31, 31, 31);
+      color: $blanco;
+      border-radius: 50%;
+      margin-right: .5rem;
+    }
+  }
 }
 
 
@@ -644,6 +700,12 @@ grid-area: img3;
 
   .sobre-nosotros .container__grid .container-item .modificar{
     width: 100%;
+  }
+
+  .contactos .contenedor-contactos .mapa iframe{
+    height: 350px;
+    width: 400px;
+    margin-top: 3rem;
   }
 }
 
@@ -781,6 +843,10 @@ grid-area: img3;
     font-size: 2.1rem;
   }
 
+  .contactos .contenedor-contactos .mapa iframe{
+    height: 250px;
+    width:100%;
+  }
 }
 
 @media (max-width:450px){
