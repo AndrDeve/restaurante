@@ -656,6 +656,18 @@ body {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
+.footer .copy {
+  padding: 1.5rem 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.334);
+  border-top: 2px solid rgb(255, 166, 0);
+}
+.footer .copy span {
+  font-size: 1.7rem;
+}
+.footer .copy span .span {
+  color: rgb(255, 166, 0);
+}
 
 @media (max-width: 1200px) {
   .ima-grande {

@@ -741,6 +741,21 @@ grid-area: img3;
       margin-bottom: .5rem;
     }
   }
+
+  .copy{
+    padding: 1.5rem 0;
+    text-align: center;
+    background: $rosa-claro;
+    border-top: 2px solid rgb(255, 166, 0);
+
+    span{
+      font-size: 1.7rem;
+
+      .span{
+        color:rgb(255, 166, 0) ;
+      }
+    }
+  }
 }
 
 
