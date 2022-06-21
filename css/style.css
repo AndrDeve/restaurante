@@ -626,7 +626,7 @@ body {
   .contactos .contenedor-contactos .mapa iframe {
     height: 350px;
     width: 400px;
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 }
 @media (max-width: 900px) {
