@@ -575,6 +575,36 @@ grid-area: img3;
   }
 }
 
+//contactos
+.contactos{
+  padding: 0 6%;
+  margin-top: 5rem;
+  
+  .textos-contactos{
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h3{
+      font-size: 4.5rem;
+      font-family: 'Pacifico', cursive;
+      color: $gris;
+    }
+
+    p{
+      font-size: 2.4rem;
+      color: $gris;
+      margin-bottom: 2rem;
+    }
+
+    hr{
+      text-align: center;
+      border: 1px solid rgb(255, 166, 0);
+      width: 15%;
+      margin: 0 auto;
+    }
+  }
+}
+
 
 // media queries
 @media (max-width:1200px){
@@ -802,13 +832,30 @@ grid-area: img3;
       p{
         font-size: 2.2rem;
       }
+
+      hr{
+        width: 30%;
+      }
     }
 
     .galeria .textos-galeria p{
       font-size: 2.2rem;
     }
+    .galeria .textos-galeria hr{
+      width: 30%;
+    }
 
     .menu .textos-menu p{
       font-size: 2.2rem;
+    }
+    .menu .textos-menu hr{
+      width: 30%;
+    }
+
+    .contactos .textos-contactos p{
+      font-size: 2.2rem;
+    }
+    .contactos .textos-contactos hr{
+      width: 30%;
     }
   }
