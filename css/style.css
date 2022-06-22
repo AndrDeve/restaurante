@@ -509,12 +509,16 @@ body {
   text-align: center;
   margin-top: 1rem;
 }
+.menu .menu-pdf .descarga {
+  position: relative;
+}
 .menu .menu-pdf a {
   color: white;
   font-size: 2rem;
   background: #414141;
   padding: 1.5rem 2.5rem;
   border-radius: 2rem 0 2rem 0;
+  position: relative;
 }
 .menu .menu-pdf a:hover {
   background: rgb(0, 0, 0);

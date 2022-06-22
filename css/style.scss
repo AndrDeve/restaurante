@@ -561,12 +561,17 @@ grid-area: img3;
     text-align: center;
     margin-top: 1rem;
 
+    .descarga{
+      position: relative;
+    }
+
     a{
       color: white;
       font-size: 2rem;
       background: $gris;
       padding: 1.5rem 2.5rem;
       border-radius: 2rem 0 2rem 0;
+      position: relative;
 
       &:hover{
         background: $negro;
