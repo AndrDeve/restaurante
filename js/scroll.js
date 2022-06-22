@@ -3,7 +3,13 @@ window.sr = ScrollReveal();
     sr.reveal('.scroll-up' , {
         duration: 1800,
         origin: 'bottom',
-        distance: '50px'
+        distance: '40px'
+    });
+
+    sr.reveal('.scroll-up2' , {
+        duration: 1800,
+        origin: 'bottom',
+        distance: '10px'
     });
 
     window.sr = ScrollReveal();
